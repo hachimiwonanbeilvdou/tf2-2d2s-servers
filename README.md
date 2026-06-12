@@ -1,6 +1,6 @@
 # TF2-2B2S Servers
 
-TF2 竞技服务器配置。基于 [melkortf/tf2-servers](https://github.com/melkortf/tf2-servers) 的模板系统。
+我个人架设的TF2竞技服务器配置。基于 [melkortf/tf2-servers](https://github.com/melkortf/tf2-servers) 修改
 
 ## 目录结构
 
@@ -30,27 +30,24 @@ docker run \
   ghcr.io/melkortf/tf2-competitive
 ```
 
-### 配置文件
+### 个人修改内容
 
-- `server.cfg` — 基础服务器设置（已脱敏，使用时填入实际值）
-- `server.cfg.template` — Docker 环境变量模板（`${RCON_PASSWORD}` 等）
 - `pug_start.cfg` — PUG/Pickup 启动脚本
 - `mge_start.cfg` — MGE 模式启动脚本
-- `cfg/etf2l*.cfg` — ETF2L 联赛配置
-- `cfg/rgl*.cfg` — RGL 联赛配置
-- `cfg/fbtf_cfg/` — fbtf.tf 配置
+- `addons/sourcemod/configs/customvotes.cfg` — 自定义投票内容
+- `2b2sPUG-PICK.smx` — PUG投票插件
 
-## 比赛配置
+## 服务器内置功能
 
-- ETF2L: 6v6, 9v9, Ultiduo, Ultitrio, Bball, Pass Time
-- RGL: 6s, 7s, HL, MM, Prolander, Ultiduo
-- 自定义: MGE, PUG/Pickup, SOAP DM
+默认情况开启MGE模式
+输入!votemenu选择投票切换游戏,模式包含6s模式和MGE模式
+自定义趣味投票
 
 ## 插件列表
 
 - SourceMod + Metamod:Source
-- demos.tf 自动上传
-- logs.tf 自动上传
+- demos.tf 
+- logs.tf 
 - Supplemental Stats 2
 - Medic Stats
 - RestoreScore
@@ -59,7 +56,3 @@ docker run \
 - FixStvSlot
 - MGE Mod
 - 2B2S PUG Pick 插件
-
-## 许可证
-
-MIT
