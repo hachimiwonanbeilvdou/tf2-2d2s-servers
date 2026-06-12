@@ -23,3 +23,9 @@ __pycache__/
 
 # Exclude actual server.cfg if it contains secrets; keep the template
 *.bsp
+
+# Runtime-generated files (server data, not config)
+*.sq3
+output_demo.json
+stats.txt
+steam.inf
