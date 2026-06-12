@@ -1,0 +1,25 @@
+*.dem
+*.dem.bz2
+logs/
+download/
+downloadlists/
+replay/
+demos/
+workshop/
+resource/
+scripts/
+bin/
+media/
+materials/models/
+materials/vgui/
+sound/
+*.nav
+*.ain
+*.ztmp
+*.bz2
+*.tar
+.DS_Store
+__pycache__/
+
+# Exclude actual server.cfg if it contains secrets; keep the template
+*.bsp
