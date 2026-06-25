@@ -1,31 +1,22 @@
+# Logs
+tf/addons/sourcemod/logs/
+*.log
+
+# Databases (player data)
+tf/addons/sourcemod/data/sqlite/
+
+# Nav meshes (generated at runtime)
+tf/maps/*.nav
+
+# Demo recordings
 *.dem
-*.dem.bz2
-logs/
-download/
-downloadlists/
-replay/
-demos/
-workshop/
-resource/
-scripts/
-bin/
-media/
-materials/models/
-materials/vgui/
-sound/
-*.nav
-*.ain
-*.ztmp
-*.bz2
-*.tar
+
+# OS files
 .DS_Store
-__pycache__/
+Thumbs.db
 
-# Exclude actual server.cfg if it contains secrets; keep the template
-*.bsp
+# Sensitive - keep local
+*.secret
 
-# Runtime-generated files (server data, not config)
-*.sq3
-output_demo.json
-stats.txt
-steam.inf
+# Map BSP files (too large for Git, use download script)
+tf/maps/*.bsp
